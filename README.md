@@ -1,8 +1,6 @@
-"# ML_Adventures"
-
-
-
-## **PROBLEM STATEMENT**
+<h1 align="center">
+<strong><em style="font-family:'Brush Script MT', cursive;">ML Adventures</em></strong>
+</h1>
 
 
 ## **Business Context**
