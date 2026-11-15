@@ -1,0 +1,14 @@
+{
+  "recommended_model": "Tuned XGBoost",
+  "selection_metric": "final test F1",
+  "metrics": {
+    "model": "Tuned XGBoost",
+    "threshold": 0.5597465634346008,
+    "accuracy": 0.8582222222222222,
+    "precision": 0.40807651434643993,
+    "recall": 0.4897959183673469,
+    "f1": 0.44521739130434784,
+    "pr_auc": 0.42486458349009104,
+    "roc_auc": 0.8289455511503965
+  }
+}

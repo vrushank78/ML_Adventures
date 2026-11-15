@@ -1,0 +1,143 @@
+[NbConvertApp] Converting notebook notebooks\GreenBasket_Delivery_Failure_Full.ipynb to notebook
+C:\Program Files\Python314\Lib\site-packages\zmq\_future.py:718: RuntimeWarning: Proactor event loop does not implement add_reader family of methods required for zmq. Registering an additional selector thread for add_reader support via tornado. Use `asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())` to avoid this warning.
+  self._get_loop()
+[IPKernelApp] WARNING | Could not set permissions on C:\Users\vrush\.ipython\profile_default\security
+[IPKernelApp] WARNING | Could not set permissions on C:\Users\vrush\.ipython\profile_default\pid
+[IPKernelApp] WARNING | Could not set permissions on C:\Users\vrush\.ipython\profile_default\security
+[IPKernelApp] WARNING | Could not set permissions on C:\Users\vrush\.ipython\profile_default\pid
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] ERROR | Failed to create history session in C:\Users\vrush\.ipython\profile_default\history.sqlite. History will not be saved.
+Traceback (most recent call last):
+  File "C:\Users\vrush\OneDrive\Documents\Artificial Intelligence\PGP - AI and ML for Business Solutions\PyEnvs\myenv\Lib\site-packages\IPython\core\history.py", line 791, in __init__
+    self.new_session()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\vrush\OneDrive\Documents\Artificial Intelligence\PGP - AI and ML for Business Solutions\PyEnvs\myenv\Lib\site-packages\IPython\core\history.py", line 163, in wrapper
+    return f(*a, **kw)
+  File "C:\Users\vrush\OneDrive\Documents\Artificial Intelligence\PGP - AI and ML for Business Solutions\PyEnvs\myenv\Lib\site-packages\IPython\core\history.py", line 881, in new_session
+    cur = conn.execute(
+        """INSERT INTO sessions VALUES (NULL, ?, NULL,
+                    NULL, '') """,
+        (datetime.datetime.now().isoformat(" "),),
+    )
+sqlite3.OperationalError: attempt to write a readonly database
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1794682872.497811   34344 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1794682873.747442   34344 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1794682903.872680   34344 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI AVX_VNNI_INT8 AVX_NE_CONVERT FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Program Files\Python314\Scripts\jupyter-nbconvert.EXE\__main__.py", line 5, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Program Files\Python314\Lib\site-packages\jupyter_core\application.py", line 284, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\site-packages\traitlets\config\application.py", line 1080, in launch_instance
+    app.start()
+    ~~~~~~~~~^^
+  File "C:\Program Files\Python314\Lib\site-packages\nbconvert\nbconvertapp.py", line 420, in start
+    self.convert_notebooks()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\Python314\Lib\site-packages\nbconvert\nbconvertapp.py", line 597, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\site-packages\nbconvert\nbconvertapp.py", line 563, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        notebook_filename, resources, input_buffer=input_buffer
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Program Files\Python314\Lib\site-packages\nbconvert\nbconvertapp.py", line 487, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        notebook_filename, resources=resources
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Program Files\Python314\Lib\site-packages\nbconvert\exporters\exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\site-packages\nbconvert\exporters\exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+           ~~~~~~~~~~~~~~~~~~~~~~~^
+        nbformat.read(file_stream, as_version=4), resources=resources, **kw
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Program Files\Python314\Lib\site-packages\nbconvert\exporters\notebook.py", line 36, in from_notebook_node
+    nb_copy, resources = super().from_notebook_node(nb, resources, **kw)
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\site-packages\nbconvert\exporters\exporter.py", line 154, in from_notebook_node
+    nb_copy, resources = self._preprocess(nb_copy, resources)
+                         ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\site-packages\nbconvert\exporters\exporter.py", line 353, in _preprocess
+    nbc, resc = preprocessor(nbc, resc)
+                ~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\site-packages\nbconvert\preprocessors\base.py", line 48, in __call__
+    return self.preprocess(nb, resources)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\site-packages\nbconvert\preprocessors\execute.py", line 103, in preprocess
+    self.preprocess_cell(cell, resources, index)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\site-packages\nbconvert\preprocessors\execute.py", line 124, in preprocess_cell
+    cell = self.execute_cell(cell, index, store_history=True)
+  File "C:\Program Files\Python314\Lib\site-packages\jupyter_core\utils\__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Program Files\Python314\Lib\asyncio\base_events.py", line 720, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Program Files\Python314\Lib\site-packages\nbclient\client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "C:\Program Files\Python314\Lib\site-packages\nbclient\client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+# Save and display validation-only comparison. The test set remains untouched.
+validation_results_df = (pd.DataFrame(validation_results)
+                         .sort_values(['f1', 'pr_auc'], ascending=False)
+                         .reset_index(drop=True))
+validation_results_df.to_csv(models_dir / 'validation_model_comparison.csv', index=False)
+display(validation_results_df.style.format({
+    'threshold': '{:.3f}', 'accuracy': '{:.3f}', 'precision': '{:.3f}',
+    'recall': '{:.3f}', 'f1': '{:.3f}', 'pr_auc': '{:.3f}', 'roc_auc': '{:.3f}'
+}))
+print(f'Validation models, confusion matrices, preprocessor, and comparison report saved to: {models_dir}')
+------------------
+
+
+[31m---------------------------------------------------------------------------[39m
+[31mAttributeError[39m                            Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[26][39m[32m, line 6[39m
+[32m      2[39m validation_results_df = (pd.DataFrame(validation_results)
+[32m      3[39m                          .sort_values([[33m'f1'[39m, [33m'pr_auc'[39m], ascending=[38;5;28;01mFalse[39;00m)
+[32m      4[39m                          .reset_index(drop=[38;5;28;01mTrue[39;00m))
+[32m      5[39m validation_results_df.to_csv(models_dir / [33m'validation_model_comparison.csv'[39m, index=[38;5;28;01mFalse[39;00m)
+[32m----> [39m[32m6[39m display(validation_results_df.style.format({
+[32m      7[39m     [33m'threshold'[39m: [33m'{:.3f}'[39m, [33m'accuracy'[39m: [33m'{:.3f}'[39m, [33m'precision'[39m: [33m'{:.3f}'[39m,
+[32m      8[39m     [33m'recall'[39m: [33m'{:.3f}'[39m, [33m'f1'[39m: [33m'{:.3f}'[39m, [33m'pr_auc'[39m: [33m'{:.3f}'[39m, [33m'roc_auc'[39m: [33m'{:.3f}'[39m
+[32m      9[39m }))
+
+[36mFile [39m[32m~\OneDrive\Documents\Artificial Intelligence\PGP - AI and ML for Business Solutions\PyEnvs\myenv\Lib\site-packages\pandas\core\generic.py:6434[39m, in [36mNDFrame.__getattr__[39m[34m(self, name)[39m
+[32m   6430[39m             [38;5;28;01mand[39;00m name [38;5;28;01mnot[39;00m [38;5;28;01min[39;00m self._accessors
+[32m   6431[39m             [38;5;28;01mand[39;00m self._info_axis._can_hold_identifiers_and_holds_name(name)
+[32m   6432[39m         ):
+[32m   6433[39m             [38;5;28;01mreturn[39;00m self[name]
+[32m-> [39m[32m6434[39m         [38;5;28;01mreturn[39;00m object.__getattribute__(self, name)
+
+[36mFile [39m[32m~\OneDrive\Documents\Artificial Intelligence\PGP - AI and ML for Business Solutions\PyEnvs\myenv\Lib\site-packages\pandas\core\frame.py:1258[39m, in [36mDataFrame.style[39m[34m(self)[39m
+[32m   1254[39m         """
+[32m   1255[39m         [38;5;66;03m# Raise AttributeError so that inspect works even if jinja2 is not installed.[39;00m
+[32m   1256[39m         has_jinja2 = import_optional_dependency([33m"jinja2"[39m, errors=[33m"ignore"[39m)
+[32m   1257[39m         [38;5;28;01mif[39;00m [38;5;28;01mnot[39;00m has_jinja2:
+[32m-> [39m[32m1258[39m             [38;5;28;01mraise[39;00m AttributeError([33m"The '.style' accessor requires jinja2"[39m)
+[32m   1259[39m 
+[32m   1260[39m         [38;5;28;01mfrom[39;00m pandas.io.formats.style [38;5;28;01mimport[39;00m Styler
+[32m   1261[39m 
+
+[31mAttributeError[39m: The '.style' accessor requires jinja2
+
